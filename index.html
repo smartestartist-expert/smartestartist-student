@@ -2,49 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Student Portal · Smartest Artist</title>
-  <link rel="stylesheet" href="https://smartestartist.expert/assets/css/theme.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal | Smartest Artist</title>
+  <link rel="stylesheet" href="https://css.smartestartist.expert/core.css" />
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(to bottom, #121212, #1f1f1f);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      margin-top: 2rem;
+    }
+
     h1 {
       font-size: 2.5rem;
-      background: linear-gradient(to right, #00ffaa, #66ccff, #ff99cc);
+      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, gold, violet, deepskyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    .intro {
-      font-size: 1.1rem;
-      max-width: 640px;
+    p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
       opacity: 0.85;
-      margin-bottom: 2em;
     }
 
-    .box {
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+
+    .links a {
+      color: #fff;
       border: 1px solid #444;
-      padding: 1em 2em;
-      border-radius: 10px;
-      margin-top: 1em;
-      background: rgba(255, 255, 255, 0.05);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .links a:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 0.75rem;
+      opacity: 0.4;
+      padding: 1rem 0;
     }
   </style>
 </head>
 <body>
-  <h1>student.smartest::artist("expert")</h1>
-  <p class="intro">
-    Welcome to the Student Portal. This space is for learners, creators, and explorers<br>
-    working with Atheos, projects, or remote coaching through the Smartest Artist system.
-  </p>
+  <header>
+    <h1>student.smartest::artist("expert")</h1>
+    <p>Welcome to the student portal. Learn, build, and showcase your code with Smartest Artist. Online, in-person, and remote learning tools made simple.</p>
+  </header>
+
   <div class="links">
-    <a href="mailto:mentor@smartestartist.expert">Mentor Contact</a>
-    <a href="https://atheos.smartestartist.expert" target="_blank">Atheos Editor</a>
-    <a href="https://github.com/smartestartist-expert" target="_blank">GitHub</a>
+    <a href="https://atheos.smartestartist.expert">Launch Atheos</a>
+    <a href="https://github.com/smartestartist-expert">GitHub Repo</a>
+    <a href="mailto:mentor@smartestartist.expert">Contact Mentor</a>
+    <a href="/">Main Site</a>
   </div>
-  <div class="box">
-    ⚙️ Project slots, backups, and study tools coming soon.
-  </div>
+
   <footer>
-    &copy; 2025 Smartest Artist. Empowering indie minds.
+    &copy; 2025 Smartest Artist. Student Portal.
   </footer>
 </body>
 </html>
